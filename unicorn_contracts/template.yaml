@@ -1,6 +1,6 @@
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT-0
-AWSTemplateFormatVersion: 2010-09-09
+AWSTemplateFormatVersion: '2010-09-09'
 Transform:
   - AWS::Serverless-2016-10-31
 Description: >
@@ -17,6 +17,8 @@ Metadata:
         - W3002  # Rule disabled as nested templates are being packaged
         - E3030  # Rule disabled due to using cfn-lint-serverless rules v0.3
         - E3002  # Rule disabled due to using cfn-lint-serverless rules v0.3
+        - E0002  # Rule disabled due to using cfn-lint-serverless rules v0.3
+        - WS1003 # Rule disabled as nested templates are being packaged
         
 Parameters:
   Stage:
