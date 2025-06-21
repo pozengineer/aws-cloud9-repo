@@ -131,7 +131,7 @@ Resources:
         stage: !Ref Stage
         project: !FindInMap [Constants, ProjectName, Value]
         namespace: "{{resolve:ssm:/uni-prop/UnicornContractsNamespace}}"
-      Tracing: true
+      TracingEnabled: true
 
   # API GW Cloudwatch Log Group
   UnicornContractsApiLogGroup:
